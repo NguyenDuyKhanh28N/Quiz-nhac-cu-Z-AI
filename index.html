@@ -1,93 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Instrument Quiz</title>
-</head>
-<body>
-    <h1>Music Instrument Quiz</h1>
-    <div id="quiz">
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Violin.jpg" alt="Violin">
-            <p>A) Violin
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Trumpet.jpg" alt="Trumpet">
-            <p>A) Violin
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Guitar.jpg" alt="Guitar">
-            <p>A) Violin
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Flute.jpg" alt="Flute">
-            <p>A) Violin
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Piano.jpg" alt="Piano">
-            <p>A) Violin
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Piano</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Drum.jpg" alt="Drum">
-            <p>A) Drum
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Ukulele.jpg" alt="Ukulele">
-            <p>A) Ukulele
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Saxophone.jpg" alt="Saxophone">
-            <p>A) Saxophone
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Cello.jpg" alt="Cello">
-            <p>A) Cello
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-        <div class="question">
-            <p>What instrument is this?</p>
-            <img src="https://commons.wikimedia.org/wiki/File:Harp.jpg" alt="Harp">
-            <p>A) Harp
-            <br>B) Guitar
-            <br>C) Flute
-            <br>D) Trumpet</p>
-        </div>
-    </div>
-</body>
-</html>
+const quizData = [
+    // Existing questions
+    { question: 'Question 1?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'a' },
+    { question: 'Question 2?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'b' },
+    { question: 'Question 3?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'c' },
+    { question: 'Question 4?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'd' },
+    { question: 'Question 5?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'a' },
+    // New questions
+    { question: 'Question 6?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'a' },
+    { question: 'Question 7?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'b' },
+    { question: 'Question 8?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'c' },
+    { question: 'Question 9?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'd' },
+    { question: 'Question 10?', a: 'Option A', b: 'Option B', c: 'Option C', d: 'Option D', correct: 'b' }
+];
+
+let score = 0;
+function handleAnswer() {
+    // Updated score calculation
+    score += 10;
+}
