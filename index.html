@@ -439,128 +439,129 @@
 
     <script>
         // Quiz Data (Tiếng Việt có dấu)
-        const quizData = [
-            {
-                id: 1,
-                question: "Đây là nhạc cụ nào trong video dưới đây?",
-                type: "video",
-                mediaUrl: "https://www.youtube.com/embed/WX7dUj14Z00?start=210",
-                answers: [
-                    { letter: "A", text: "Đàn Bầu", correct: false },
-                    { letter: "B", text: "Đàn Tranh", correct: true },
-                    { letter: "C", text: "Đàn Nhị", correct: false },
-                    { letter: "D", text: "Đàn Tỳ Bà", correct: false }
-                ]
-            },
-            {
-                id: 2,
-                question: "Nhạc cụ trong hình ảnh dưới đây là gì?",
-                type: "image",
-                mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dan_bau.jpg/1280px-Dan_bau.jpg",
-                answers: [
-                    { letter: "A", text: "Đàn Nguyệt", correct: false },
-                    { letter: "B", text: "Đàn Bầu", correct: true },
-                    { letter: "C", text: "Đàn Đáy", correct: false },
-                    { letter: "D", text: "Đàn Tam", correct: false }
-                ]
-            },
-            {
-                id: 3,
-                question: "Nghe đoạn nhạc và cho biết đây là nhạc cụ nào?",
-                type: "audio",
-                mediaUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", 
-                answers: [
-                    { letter: "A", text: "Piano", correct: false },
-                    { letter: "B", text: "Guitar", correct: false },
-                    { letter: "C", text: "Violin", correct: false },
-                    { letter: "D", text: "Nhạc cụ điện tử", correct: true }
-                ]
-            },
-            {
-                id: 4,
-                question: "Trong hình ảnh dưới đây là nhạc cụ nào?",
-                type: "image",
-                mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Violin_VL100.jpg/1280px-Violin_VL100.jpg",
-                answers: [
-                    { letter: "A", text: "Cello", correct: false },
-                    { letter: "B", text: "Violin", correct: true },
-                    { letter: "C", text: "Viola", correct: false },
-                    { letter: "D", text: "Double Bass", correct: false }
-                ]
-            },
-            {
-                id: 5,
-                question: "Video sau đang trình diễn nhạc cụ nào?",
-                type: "video",
-                mediaUrl: "https://www.youtube.com/embed/WX7dUj14Z00?start=60",
-                answers: [
-                    { letter: "A", text: "Đàn Nhị", correct: true },
-                    { letter: "B", text: "Đàn Họ", correct: false },
-                    { letter: "C", text: "Đàn Gáo", correct: false },
-                    { letter: "D", text: "Đàn Sến", correct: false }
-                ]
-            }
-					{
-				id: 6,
-				question: "Nhạc cụ trong hình dưới đây là gì?",
-				type: "image",
-				mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Guitar_1.jpg/1280px-Guitar_1.jpg",
-				answers: [
-					{ letter: "A", text: "Đàn Ukulele", correct: false },
-					{ letter: "B", text: "Đàn Guitar", correct: true },
-					{ letter: "C", text: "Đàn Bass", correct: false },
-					{ letter: "D", text: "Đàn Mandolin", correct: false }
-				]
-			},
-			{
-				id: 7,
-				question: "Đây là nhạc cụ truyền thống nào của Việt Nam?",
-				type: "image",
-				mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dan_nguyet.jpg/1280px-Dan_nguyet.jpg",
-				answers: [
-					{ letter: "A", text: "Đàn Nguyệt", correct: true },
-					{ letter: "B", text: "Đàn Tam", correct: false },
-					{ letter: "C", text: "Đàn Tỳ Bà", correct: false },
-					{ letter: "D", text: "Đàn Tứ", correct: false }
-				]
-			},
-			{
-				id: 8,
-				question: "Nhạc cụ nào được hiển thị trong hình?",
-				type: "image",
-				mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Steinway_%26_Sons_Fluegel_Modell_D-274%2C_Schwarz_Polyester%2C_Goldene_Zierleiste.jpg/1280px-Steinway_%26_Sons_Fluegel_Modell_D-274%2C_Schwarz_Polyester%2C_Goldene_Zierleiste.jpg",
-				answers: [
-					{ letter: "A", text: "Đàn Organ", correct: false },
-					{ letter: "B", text: "Đàn Piano", correct: true },
-					{ letter: "C", text: "Đàn Harpsichord", correct: false },
-					{ letter: "D", text: "Đàn Keyboard", correct: false }
-				]
-			},
-			{
-				id: 9,
-				question: "Hình ảnh này là nhạc cụ gì?",
-				type: "image",
-				mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Trumpet-3.jpg/1280px-Trumpet-3.jpg",
-				answers: [
-					{ letter: "A", text: "Kèn Saxophone", correct: false },
-					{ letter: "B", text: "Kèn Trombone", correct: false },
-					{ letter: "C", text: "Kèn Trumpet", correct: true },
-					{ letter: "D", text: "Kèn Clarinet", correct: false }
-				]
-			},
-			{
-				id: 10,
-				question: "Nhạc cụ dân tộc nào có trong hình?",
-				type: "image",
-				mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dan_tranh.jpg/1280px-Dan_tranh.jpg",
-				answers: [
-					{ letter: "A", text: "Đàn Bầu", correct: false },
-					{ letter: "B", text: "Đàn Tranh", correct: true },
-					{ letter: "C", text: "Đàn Nhị", correct: false },
-					{ letter: "D", text: "Đàn K'lông pút", correct: false }
-				]
-			}
-        ];
+        // Quiz Data (Tiếng Việt có dấu)
+	const quizData = [
+		{
+			id: 1,
+			question: "Đây là nhạc cụ nào trong hình dưới đây?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tranh_%28musical_instrument%29.jpg/1280px-Tranh_%28musical_instrument%29.jpg",
+			answers: [
+				{ letter: "A", text: "Đàn Bầu", correct: false },
+				{ letter: "B", text: "Đàn Tranh", correct: true },
+				{ letter: "C", text: "Đàn Nhị", correct: false },
+				{ letter: "D", text: "Đàn Tỳ Bà", correct: false }
+			]
+		},
+		{
+			id: 2,
+			question: "Nhạc cụ trong hình ảnh dưới đây là gì?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dan_bau.jpg/1280px-Dan_bau.jpg",
+			answers: [
+				{ letter: "A", text: "Đàn Nguyệt", correct: false },
+				{ letter: "B", text: "Đàn Bầu", correct: true },
+				{ letter: "C", text: "Đàn Đáy", correct: false },
+				{ letter: "D", text: "Đàn Tam", correct: false }
+			]
+		},
+		{
+			id: 3,
+			question: "Nhạc cụ nào được hiển thị trong hình?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Yamaha_U3_piano.jpg/1280px-Yamaha_U3_piano.jpg",
+			answers: [
+				{ letter: "A", text: "Đàn Organ", correct: false },
+				{ letter: "B", text: "Đàn Piano", correct: true },
+				{ letter: "C", text: "Đàn Harpsichord", correct: false },
+				{ letter: "D", text: "Đàn Keyboard", correct: false }
+			]
+		},
+		{
+			id: 4,
+			question: "Trong hình ảnh dưới đây là nhạc cụ nào?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Violin_VL100.jpg/1280px-Violin_VL100.jpg",
+			answers: [
+				{ letter: "A", text: "Cello", correct: false },
+				{ letter: "B", text: "Violin", correct: true },
+				{ letter: "C", text: "Viola", correct: false },
+				{ letter: "D", text: "Double Bass", correct: false }
+			]
+		},
+		{
+			id: 5,
+			question: "Nhạc cụ truyền thống nào của Việt Nam có trong hình?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Dan_nhi.jpg/1280px-Dan_nhi.jpg",
+			answers: [
+				{ letter: "A", text: "Đàn Nhị", correct: true },
+				{ letter: "B", text: "Đàn Họ", correct: false },
+				{ letter: "C", text: "Đàn Gáo", correct: false },
+				{ letter: "D", text: "Đàn Sến", correct: false }
+			]
+		},
+		{
+			id: 6,
+			question: "Nhạc cụ trong hình dưới đây là gì?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Guitar_1.jpg/1280px-Guitar_1.jpg",
+			answers: [
+				{ letter: "A", text: "Đàn Ukulele", correct: false },
+				{ letter: "B", text: "Đàn Guitar", correct: true },
+				{ letter: "C", text: "Đàn Bass", correct: false },
+				{ letter: "D", text: "Đàn Mandolin", correct: false }
+			]
+		},
+		{
+			id: 7,
+			question: "Đây là nhạc cụ truyền thống nào của Việt Nam?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dan_nguyet.jpg/1280px-Dan_nguyet.jpg",
+			answers: [
+				{ letter: "A", text: "Đàn Nguyệt", correct: true },
+				{ letter: "B", text: "Đàn Tam", correct: false },
+				{ letter: "C", text: "Đàn Tỳ Bà", correct: false },
+				{ letter: "D", text: "Đàn Tứ", correct: false }
+			]
+		},
+		{
+			id: 8,
+			question: "Nhạc cụ bộ đồng nào được hiển thị trong hình?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Trumpet-3.jpg/1280px-Trumpet-3.jpg",
+			answers: [
+				{ letter: "A", text: "Kèn Saxophone", correct: false },
+				{ letter: "B", text: "Kèn Trombone", correct: false },
+				{ letter: "C", text: "Kèn Trumpet", correct: true },
+				{ letter: "D", text: "Kèn Clarinet", correct: false }
+			]
+		},
+		{
+			id: 9,
+			question: "Nhạc cụ nào có trong hình?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saxophone_01.jpg/1280px-Saxophone_01.jpg",
+			answers: [
+				{ letter: "A", text: "Kèn Trumpet", correct: false },
+				{ letter: "B", text: "Kèn Saxophone", correct: true },
+				{ letter: "C", text: "Kèn Trombone", correct: false },
+				{ letter: "D", text: "Kèn Clarinet", correct: false }
+			]
+		},
+		{
+			id: 10,
+			question: "Nhạc cụ dân tộc nào của Việt Nam có trong hình?",
+			type: "image",
+			mediaUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dan_tranh.jpg/1280px-Dan_tranh.jpg",
+			answers: [
+				{ letter: "A", text: "Đàn Bầu", correct: false },
+				{ letter: "B", text: "Đàn Tranh", correct: true },
+				{ letter: "C", text: "Đàn Nhị", correct: false },
+				{ letter: "D", text: "Đàn K'lông pút", correct: false }
+			]
+		}
+	];
 
         // State Management
         let currentQuestionIndex = 0;
